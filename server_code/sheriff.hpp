@@ -37,7 +37,7 @@ public:
         return _pos;
     }
 
-    bool move(Movement _to)
+    bool move(Movement _to, Position SpyPosition)
     {
         int checkSum = _to.enableUp + _to.enableDown + _to.enableLeft + _to.enableRight;
         if (checkSum != 1)
@@ -62,6 +62,12 @@ public:
             _pos.colsIndex += 1;
         }
         log("Sheriff.move:Success!");
-        return true;
+        int distance = 0;
+        distance += (_pos.colsIndex - SpyPosition.colsIndex) * (_pos.colsIndex - SpyPosition.colsIndex);
+        distance += (_pos.rowsIndex - SpyPosition.rowsIndex) * (_pos.rowsIndex - SpyPosition.rowsIndex);
+        if(distance <=2){
+            return true;
+        }
+        else return false;
     }
 };
