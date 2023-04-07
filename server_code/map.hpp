@@ -2,7 +2,7 @@
 #include "block.hpp"
 #include "./spy.hpp"
 #include "./sheriff.hpp"
-
+#include "./position.hpp"
 class Map
 {
 private:
