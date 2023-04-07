@@ -10,4 +10,4 @@ struct Movement
     bool enableDown;
     bool enableLeft;
     bool enableRight;
-} 
+};
