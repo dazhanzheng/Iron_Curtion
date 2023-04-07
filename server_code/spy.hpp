@@ -1,29 +1,28 @@
+#include "./block.hpp"
+#include <spdlog/spdlog.h>
+
 class Spy
+{
+private:
+    int _pos;
+    int hp;
+
+public:
+    enum towards
     {
-    private:
-        struct position
-        {
-            int _rowIndex;
-            int _colIndex;
-        };
-        position _pos;
-        int hp;
-
-    public:
-        enum towards
-        {
-            toUp,
-            toDown,
-            toLeft,
-            toRight,
-        };
-
-        bool move(towards _to)
-        {
-            if(_to == toUp){
-                int temp1 = _pos._rowIndex;
-                int temp2 = _pos._colIndex;
-                
-            }
-        }
+        toUp = -5,
+        toDown = +5,
+        toLeft = -1,
+        toRight = +1,
     };
+
+    bool move(towards _to, const Block *src)
+    {
+        int posSrc = _pos;
+        int posDst = _pos + _to;
+        // boundary
+        if (posDst > 24 || posDst < 0){
+
+        }
+    }
+};

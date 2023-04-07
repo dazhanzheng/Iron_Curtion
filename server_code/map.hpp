@@ -1,5 +1,5 @@
 #include <iostream>
-#include "./block.hpp"
+#include "block.hpp"
 #include "./spy.hpp"
 #include "./sheriff.hpp"
 
