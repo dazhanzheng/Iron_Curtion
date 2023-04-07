@@ -1,0 +1,5 @@
+class Sheriff
+{
+private:
+public:
+};
