@@ -1,5 +1,4 @@
 #include "./block.hpp"
-#include <spdlog/spdlog.h>
 
 class Spy
 {
@@ -10,10 +9,10 @@ private:
 public:
     enum towards
     {
-        toUp = -5,
-        toDown = +5,
-        toLeft = -1,
-        toRight = +1,
+        toUp,
+        toDown,
+        toLeft,
+        toRight,
     };
 
     bool move(towards _to, const Block *src)
