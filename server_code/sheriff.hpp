@@ -2,6 +2,7 @@ class Sheriff
 {
 private:
     Position _pos;
+
 public:
     Movement getLegalAction()
     {
@@ -31,7 +32,8 @@ public:
         return result;
     }
 
-    Position getPosition(){
+    Position getPosition()
+    {
         return _pos;
     }
 

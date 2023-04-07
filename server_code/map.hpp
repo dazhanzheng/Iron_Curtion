@@ -11,7 +11,7 @@ private:
     Sheriff _srf;
     Position _base;
     Position _intel;
-    
+
 public:
     Map(Position base)
     {
@@ -26,10 +26,8 @@ public:
             }
         }
         _base = base;
-        _intel.colsIndex = 4-base.colsIndex;
-        _intel.rowsIndex = 4-base.rowsIndex;
+        _intel.colsIndex = 4 - base.colsIndex;
+        _intel.rowsIndex = 4 - base.rowsIndex;
         log("Map.init:Success!");
     }
-    
-    
 };

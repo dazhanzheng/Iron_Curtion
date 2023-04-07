@@ -1,72 +1,43 @@
+#include "struct.hpp"
+#include "obstacle.hpp"
 class Block
 {
 private:
-    class Obstacle
-    {
-    private:
-        // type of obstacle
-        enum obstacleType
-        {
-            green,
-            guards,
-            bombs,
-            alarm,
-        };
-        obstacleType _id;
-
-    public:
-        // TODO:
-        Obstacle() {}
-        ~Obstacle() {}
-    };
-
-    // access to other block
-    struct Access
-    {
-        bool _isUp;
-        bool _isDown;
-        bool _isLeft;
-        bool _isRight;
-    };
-    bool isCity;
-
-    /*
-    struct Shape{
-        // all shapes
-        enum shapes{
-            I,
-            L,
-            T,
-            X,
-        };
-        shapes value;
-    };
-    */
-
-    struct ObstacleList
-    {
-        int _pointer;
-        Obstacle _list[10];
-    };
-
-    Access _acc;
-    ObstacleList _obslist;
+    Access _access;
+    Obstacle _list[10];
+    uint obstacleListNum;
+    bool _isCity;
+    bool _isDestroy;
 
 public:
     // TODO:
-    Block() {}
+    Block()
+    {
+        // access init
+        _access._isUp = false;
+        _access._isDown = false;
+        _access._isLeft = false;
+        _access._isRight = false;
+
+        obstacleListNum = 0;
+        bool _isCity = false;
+        bool _isDestroy = false;
+        log("Block.init:Success!");
+    }
+
     ~Block() {}
     Access getAccess()
     {
-        return _acc;
+        return _access;
     }
+
     void setCity()
     {
-        isCity = true;
+        _isCity = true;
     }
 
     bool getIsCity()
     {
-        return isCity;
+        return _isCity;
     }
 };
