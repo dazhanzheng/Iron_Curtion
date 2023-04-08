@@ -1,5 +1,6 @@
 #include "./struct.hpp"
 #include <random>
+#include <algorithm>
 #include "./preDeck.hpp"
 #include "log.hpp"
 #ifndef CARD_HPP
@@ -52,7 +53,7 @@ public:
         std::random_device rd;
         std::mt19937 gen(rd());
 
-        std::shuffle(informantPile[0], informantPile[20], gen);
+        std::shuffle(informantPile, informantPile+20, gen);
         log("Card.shuffleInformant:Success!");
         return true;
     }
@@ -61,7 +62,7 @@ public:
         std::random_device rd;
         std::mt19937 gen(rd());
 
-        std::shuffle(obstaclePile[0], obstaclePile[27], gen);
+        std::shuffle(obstaclePile, obstaclePile+27, gen);
         log("Card.shuffleObstacle:Success!");
         return true;
     }
@@ -70,7 +71,7 @@ public:
         std::random_device rd;
         std::mt19937 gen(rd());
 
-        std::shuffle(tilePile[0], tilePile[35], gen);
+        std::shuffle(tilePile, tilePile+35, gen);
         log("Card.shuffleTile:Success!");
         return true;
     }

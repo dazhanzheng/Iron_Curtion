@@ -1,7 +1,6 @@
-#include "log.hpp"
-#include "map.hpp"
+#include "board.hpp"
 
 int main()
 {
-    log("logtest~");
+    Board test;
 }
