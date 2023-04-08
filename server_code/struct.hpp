@@ -15,9 +15,9 @@ struct Movement
 enum obstacleType
 {
     green,
-    guards,
+    guard,
     bombs,
-    alarm,
+    alert,
 };
 
 struct Access
@@ -30,5 +30,27 @@ struct Access
 
 enum informantType
 {
-    
+    explosiveExpert,
+    detective,
+    k9,
+    newsBoy,
+    protester,
+    barGirl,
+    surgen,
+    waitress,
+    taxiDriver,
+    sniper,
+    militaryPolice,
+    plumber,
+};
+
+enum tileType
+{
+    I,
+    Iq,
+    L,
+    Lq,
+    T,
+    Tq,
+    Xq,
 };
