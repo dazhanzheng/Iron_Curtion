@@ -1,6 +1,8 @@
+
 #include "./block.hpp"
 #include "./log.hpp"
 #include "./struct.hpp"
+
 class Spy
 {
 private:

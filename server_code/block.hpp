@@ -1,5 +1,7 @@
+
 #include "struct.hpp"
 #include "obstacle.hpp"
+
 class Block
 {
 private:

@@ -17,7 +17,7 @@ public:
         _id = _initId;
         _isUsed = false;
         log("Obstacle.init:Success!");
-        return;
+        return true;
     }
     bool setObsType(obstacleType setType)
     {

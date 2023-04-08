@@ -1,5 +1,4 @@
 #include "struct.hpp"
-
 informantType basicInformantDeck[20]{
     explosiveExpert,
     explosiveExpert,

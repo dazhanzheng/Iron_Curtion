@@ -1,8 +1,10 @@
+
 #include <iostream>
 #include "block.hpp"
 #include "./spy.hpp"
 #include "./sheriff.hpp"
 #include "./struct.hpp"
+
 class Map
 {
 private:

@@ -1,7 +1,9 @@
+
 #include "./struct.hpp"
 #include <random>
 #include "./preDeck.hpp"
 #include "log.hpp"
+
 class Card
 {
 private:
