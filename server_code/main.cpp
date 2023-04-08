@@ -1,4 +1,3 @@
-
 #include "log.hpp"
 #include "map.hpp"
 

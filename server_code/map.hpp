@@ -1,10 +1,11 @@
 #include <iostream>
-#include "block.hpp"
+#include "./block.hpp"
 #include "./spy.hpp"
 #include "./sheriff.hpp"
 #include "./struct.hpp"
 #ifndef MAP_HPP
 #define MAP_HPP
+
 class Map
 {
 private:
@@ -67,7 +68,7 @@ public:
 
     bool setAccess(Position blockPtr, Access acc)
     {
-        bool check = _blocks[blockPtr.rowsIndex][blockPtr.colsIndex].Block::setAccess(acc);
+        bool check = _blocks[blockPtr.rowsIndex][blockPtr.colsIndex].setAccess(acc);
         if (check)
         {
             log("Map.setAccess:Success!");

@@ -95,9 +95,8 @@ public:
         {
             if ((*(blocks + 5)).getIsCity())
             {
-                if (sheriffPosition.colsIndex == _pos.colsIndex && sheriffPosition.rowsIndex == _pos.rowsIndex + 1)
-                    ;
-                result.enableUp == false;
+                if (sheriffPosition.colsIndex == _pos.colsIndex && sheriffPosition.rowsIndex == _pos.rowsIndex + 1);
+                result.enableUp = false;
             }
         }
         if (result.enableDown)
@@ -106,7 +105,7 @@ public:
             {
                 if (sheriffPosition.colsIndex == _pos.colsIndex && sheriffPosition.rowsIndex == _pos.rowsIndex - 1)
                     ;
-                result.enableDown == false;
+                result.enableDown = false;
             }
         }
         if (result.enableLeft)
@@ -115,7 +114,7 @@ public:
             {
                 if (sheriffPosition.colsIndex == _pos.colsIndex - 1 && sheriffPosition.rowsIndex == _pos.rowsIndex)
                     ;
-                result.enableLeft == false;
+                result.enableLeft = false;
             }
         }
         if (result.enableRight)
@@ -124,7 +123,7 @@ public:
             {
                 if (sheriffPosition.colsIndex == _pos.colsIndex + 1 && sheriffPosition.rowsIndex == _pos.rowsIndex)
                     ;
-                result.enableRight == false;
+                result.enableRight = false;
             }
         }
 
