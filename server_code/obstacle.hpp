@@ -12,7 +12,7 @@ public:
         log("Obstacle.init:Success!");
         return;
     }
-    Obstacle(obstacleType _initId)
+    bool initialize(obstacleType _initId)
     {
         _id = _initId;
         _isUsed = false;

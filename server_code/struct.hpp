@@ -27,3 +27,8 @@ struct Access
     bool _isLeft;
     bool _isRight;
 };
+
+enum informantType
+{
+    
+};
