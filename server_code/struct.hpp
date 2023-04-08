@@ -1,3 +1,5 @@
+#ifndef STRUCT_HPP
+#define STRUCT_HPP
 struct Position
 {
     int colsIndex;
@@ -54,3 +56,4 @@ enum tileType
     Tq,
     Xq,
 };
+#endif

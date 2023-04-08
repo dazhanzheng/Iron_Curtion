@@ -1,9 +1,9 @@
-
 #include "./struct.hpp"
 #include <random>
 #include "./preDeck.hpp"
 #include "log.hpp"
-
+#ifndef CARD_HPP
+#define CARD_HPP
 class Card
 {
 private:
@@ -74,3 +74,4 @@ public:
         return true;
     }
 };
+#endif

@@ -1,10 +1,14 @@
+#include "struct.hpp"
+#ifndef SHERIFF_HPP
+#define SHERIFF_HPP
 class Sheriff
 {
 private:
     Position _pos;
 
 public:
-    Sheriff(){
+    Sheriff()
+    {
         _pos.colsIndex = 2;
         _pos.rowsIndex = 2;
         log("Sheriff.init:Success!");
@@ -84,3 +88,4 @@ public:
         }
     }
 };
+#endif

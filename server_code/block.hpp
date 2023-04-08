@@ -1,7 +1,7 @@
-
 #include "struct.hpp"
 #include "obstacle.hpp"
-
+#ifndef BLOCK_HPP
+#define BLOCK_HPP
 class Block
 {
 private:
@@ -71,3 +71,4 @@ public:
         return _isCity;
     }
 };
+#endif

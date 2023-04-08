@@ -1,10 +1,10 @@
-
 #include <iostream>
 #include "block.hpp"
 #include "./spy.hpp"
 #include "./sheriff.hpp"
 #include "./struct.hpp"
-
+#ifndef MAP_HPP
+#define MAP_HPP
 class Map
 {
 private:
@@ -15,8 +15,6 @@ private:
     Position _intel;
 
 public:
-    
-
     Map()
     {
         for (int rows = 0; rows <= 4; rows++)
@@ -49,7 +47,7 @@ public:
         _intel.rowsIndex = 4 - base.rowsIndex;
         _spy = Position(_base);
         log("Map.initialize:Success!");
-        return;
+        return true;
     }
 
     bool addObstacle(Position blockPtr, obstacleType obsId)
@@ -82,3 +80,4 @@ public:
         }
     }
 };
+#endif

@@ -1,4 +1,6 @@
 #include "struct.hpp"
+#ifndef PREDECK_HPP
+#define PREDECK_HPP
 informantType basicInformantDeck[20]{
     explosiveExpert,
     explosiveExpert,
@@ -89,3 +91,4 @@ tileType basicTileDeck[35]{
     Tq,
     Xq,
 };
+#endif

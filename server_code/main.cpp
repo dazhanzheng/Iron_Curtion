@@ -2,6 +2,7 @@
 #include "log.hpp"
 #include "map.hpp"
 
-int main(){
+int main()
+{
     log("logtest~");
 }

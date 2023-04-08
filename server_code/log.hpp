@@ -2,7 +2,8 @@
 #include <fstream>
 #include <chrono>
 #include <ctime>
-
+#ifndef LOG_HPP
+#define LOG_HPP
 void log(const std::string &message)
 {
     auto now = std::chrono::system_clock::now();
@@ -16,3 +17,4 @@ void log(const std::string &message)
     log_file << time_str << " - " << message << std::endl;
     log_file.close();
 }
+#endif

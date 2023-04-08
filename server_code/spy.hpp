@@ -1,8 +1,8 @@
-
 #include "./block.hpp"
 #include "./log.hpp"
 #include "./struct.hpp"
-
+#ifndef SPY_HPP
+#define SPY_HPP
 class Spy
 {
 private:
@@ -10,7 +10,8 @@ private:
     int _hp;
 
 public:
-    Spy(){
+    Spy()
+    {
         _hp = 3;
     }
 
@@ -159,3 +160,4 @@ public:
         return true;
     }
 };
+#endif
