@@ -1,4 +1,4 @@
-#include "struct.hpp"
+#include "./struct.hpp"
 
 informantType basicInformantDeck[20]{
     explosiveExpert,
@@ -53,7 +53,7 @@ obstacleType basicObstacleDeck[27]{
     alert,
 };
 
-blockType basicTileDeck[35]{
+tileType basicTileDeck[35]{
     L,
     L,
     Lq,

@@ -14,9 +14,9 @@ private:
     int informantDiscardPilePtr;
     obstacleType obstaclePile[27];
     int obstaclePilePtr;
-    blockType tilePile[35];
+    tileType tilePile[35];
     int tilePilePtr;
-    blockType tileHand[35];
+    tileType tileHand[35];
     int tileHandPtr;
 
 public:
@@ -63,6 +63,6 @@ public:
         std::random_device rd;
         std::mt19937 gen(rd());
 
-        std::shuffle(blockPile[35], blockPile[35], gen);
+        std::shuffle(tilePile[0], tilePile[35], gen);
     }
 };
