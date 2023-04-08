@@ -11,7 +11,7 @@ void log(const std::string &message)
     std::string time_str = std::ctime(&now_time);
     time_str.pop_back();
 
-    std::ofstream log_file("logs.txt", std::ios::app);
+    std::ofstream log_file("./log/logs.txt", std::ios::app);
 
     log_file << time_str << " - " << message << std::endl;
     log_file.close();

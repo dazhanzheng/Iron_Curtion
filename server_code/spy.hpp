@@ -8,8 +8,13 @@ private:
     int _hp;
 
 public:
-    Spy()
+    Spy(){
+        _hp = 3;
+    }
+
+    Spy(Position _initPos)
     {
+        _pos = _initPos;
         _hp = 3;
     }
 
@@ -124,7 +129,7 @@ public:
         return result;
     }
 
-    bool move(Movement _to, const Block *src)
+    bool move(Movement _to)
     {
         int checkSum = _to.enableUp + _to.enableDown + _to.enableLeft + _to.enableRight;
         if (checkSum != 1)

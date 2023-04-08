@@ -4,6 +4,13 @@ private:
     Position _pos;
 
 public:
+    Sheriff(){
+        _pos.colsIndex = 2;
+        _pos.rowsIndex = 2;
+        log("Sheriff.init:Success!");
+        return;
+    }
+
     Movement getLegalAction()
     {
         Movement result;
@@ -37,12 +44,12 @@ public:
         return _pos;
     }
 
-    bool move(Movement _to, Position SpyPosition)
+    bool patrol(Movement _to, Position SpyPosition)
     {
         int checkSum = _to.enableUp + _to.enableDown + _to.enableLeft + _to.enableRight;
         if (checkSum != 1)
         {
-            log("Sheriff.move:move directions not equal to 1!");
+            log("Sheriff.patrol:move directions not equal to 1!");
             return false;
         }
         if (_to.enableUp == true)
@@ -61,13 +68,19 @@ public:
         {
             _pos.colsIndex += 1;
         }
-        log("Sheriff.move:Success!");
+        log("Sheriff.patrol:Success!");
         int distance = 0;
         distance += (_pos.colsIndex - SpyPosition.colsIndex) * (_pos.colsIndex - SpyPosition.colsIndex);
         distance += (_pos.rowsIndex - SpyPosition.rowsIndex) * (_pos.rowsIndex - SpyPosition.rowsIndex);
-        if(distance <=2){
+        if (distance <= 2)
+        {
+            log("Sheriff.patrol:result.true!");
             return true;
         }
-        else return false;
+        else
+        {
+            log("Sheriff.patrol:result.false!");
+            return false;
+        }
     }
 };

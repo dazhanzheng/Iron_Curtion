@@ -4,8 +4,8 @@ class Block
 {
 private:
     Access _access;
-    Obstacle _list[10];
-    uint obstacleListNum;
+    Obstacle _obstacleList[10];
+    uint obstacleIndex;
     bool _isCity;
     bool _isDestroy;
 
@@ -19,25 +19,53 @@ public:
         _access._isLeft = false;
         _access._isRight = false;
 
-        obstacleListNum = 0;
+        obstacleIndex = 0;
         bool _isCity = false;
         bool _isDestroy = false;
         log("Block.init:Success!");
+        return;
     }
 
     ~Block() {}
     Access getAccess()
     {
+        log("Block.getAccess:Success!");
         return _access;
     }
 
     void setCity()
     {
+        log("Block.setCity:Success!");
         _isCity = true;
+        return;
+    }
+
+    bool setObstacle(obstacleType obsId)
+    {
+        bool check = _obstacleList[obstacleIndex].setObsType(obsId);
+        if (check)
+        {
+            obstacleIndex++;
+            log("Block.setObstacle:Success!");
+            return true;
+        }
+        else
+        {
+            log("Block.setObstacle:Error!");
+            return false;
+        }
+    }
+
+    bool setAccess(Access accIn)
+    {
+        _access = accIn;
+        log("Block.setAccess:Success!");
+        return true;
     }
 
     bool getIsCity()
     {
+        log("Block.getIsCity:Success!");
         return _isCity;
     }
 };

@@ -7,8 +7,8 @@ class Map
 {
 private:
     Block _blocks[5][5];
-    Spy _spy;
     Sheriff _srf;
+    Spy _spy;
     Position _base;
     Position _intel;
 
@@ -28,6 +28,38 @@ public:
         _base = base;
         _intel.colsIndex = 4 - base.colsIndex;
         _intel.rowsIndex = 4 - base.rowsIndex;
+        _spy = Position(_base);
         log("Map.init:Success!");
+        return;
+    }
+
+    bool addObstacle(Position blockPtr, obstacleType obsId)
+    {
+        bool check = _blocks[blockPtr.rowsIndex][blockPtr.colsIndex].setObstacle(obsId);
+        if (check)
+        {
+            log("Map.addObstacle:Success!");
+            return true;
+        }
+        else
+        {
+            log("Map.addObstacle:Error!");
+            return false;
+        }
+    }
+
+    bool setAccess(Position blockPtr, Access acc)
+    {
+        bool check = _blocks[blockPtr.rowsIndex][blockPtr.colsIndex].Block::setAccess(acc);
+        if (check)
+        {
+            log("Map.setAccess:Success!");
+            return true;
+        }
+        else
+        {
+            log("Map.setAccess:Error!");
+            return false;
+        }
     }
 };
