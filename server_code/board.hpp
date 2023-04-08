@@ -1,5 +1,6 @@
 #include "map.hpp"
 #include "card.hpp"
+
 class Board
 {
 private:
