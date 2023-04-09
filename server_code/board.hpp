@@ -11,8 +11,19 @@ public:
     Board(){
 
     }
-    bool setBase(){
-        
+    bool setBase(Position baseWhite,Position baseBlack){
+        bool check1,check2;
+        check1 = _mapWhite.initialize(baseWhite);
+        check2 = _mapBlack.initialize(baseBlack);
+        if(check1&&check2){
+            log("Board.setBase:Success!");
+            return true;
+        }
+        else{
+            log("Board.setBase:Error!");
+            return false;
+        }
     }
+    
 };
 #endif
