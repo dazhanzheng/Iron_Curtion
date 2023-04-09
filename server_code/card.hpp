@@ -2,7 +2,7 @@
 #include <random>
 #include <algorithm>
 #include "./preDeck.hpp"
-#include "log.hpp"
+#include "./log.hpp"
 #ifndef CARD_HPP
 #define CARD_HPP
 

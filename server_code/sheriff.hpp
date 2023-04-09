@@ -1,4 +1,4 @@
-#include "struct.hpp"
+#include "./struct.hpp"
 #ifndef SHERIFF_HPP
 #define SHERIFF_HPP
 class Sheriff

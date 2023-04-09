@@ -1,4 +1,4 @@
-#include "struct.hpp"
+#include "./struct.hpp"
 #ifndef PREDECK_HPP
 #define PREDECK_HPP
 informantType basicInformantDeck[20]{

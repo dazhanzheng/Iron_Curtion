@@ -1,4 +1,4 @@
-#include "log.hpp"
+#include "./log.hpp"
 #ifndef OBSTACLE_HPP
 #define OBSTACLE_HPP
 class Obstacle

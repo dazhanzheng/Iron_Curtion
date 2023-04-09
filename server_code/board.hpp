@@ -1,5 +1,5 @@
-#include "map.hpp"
-#include "card.hpp"
+#include "./map.hpp"
+#include "./card.hpp"
 #ifndef BOARD_HPP
 #define BOARD_HPP
 class Board
