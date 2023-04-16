@@ -109,8 +109,8 @@ public:
         return tileHand[tileHandPtr-1];
     }
 
-    tileType* viewTile(){
-        return &tileHand;
+    const tileType* viewTile(){
+        return tileHand;
     }
 
     bool discardTile(int discardIndex)
