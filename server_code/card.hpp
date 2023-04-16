@@ -109,6 +109,10 @@ public:
         return tileHand[tileHandPtr-1];
     }
 
+    tileType* viewTile(){
+        return &tileHand;
+    }
+
     bool discardTile(int discardIndex)
     {
         for(int i=discardIndex;i<35-1;i++){
