@@ -3,10 +3,8 @@
 #define SHERIFF_HPP
 class Sheriff
 {
-private:
-    Position _pos;
-
 public:
+    Position _pos;
     Sheriff()
     {
         _pos.colsIndex = 2;
