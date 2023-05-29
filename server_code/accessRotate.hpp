@@ -1,7 +1,14 @@
 #include "./struct.hpp"
-
 #ifndef ACCESSROTATE_HPP
 #define ACCESSROTATE_HPP
+
+/*
+    File Name: accessRotate.hpp
+    Author: dazhanzheng
+
+    Description: Define the access of each block in each rotation
+*/
+
 class AccessRotate
 {
 public:

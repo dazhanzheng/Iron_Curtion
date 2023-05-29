@@ -1,5 +1,13 @@
 #ifndef STRUCT_HPP
 #define STRUCT_HPP
+
+/*
+    File Name: struct.hpp
+    Author: dazhanzheng
+
+    Description: Some struct and enum used in the game.
+*/
+
 struct Position
 {
     int colsIndex;

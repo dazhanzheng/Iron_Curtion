@@ -6,6 +6,13 @@
 #ifndef MAP_HPP
 #define MAP_HPP
 
+/*
+    File Name: map.hpp
+    Author: dazhanzheng
+
+    Description: Map contains blocks. I put the move function of spy in this class to avoid the problem of circular reference.
+*/
+
 class Map
 {
 private:

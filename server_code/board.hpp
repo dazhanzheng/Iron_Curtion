@@ -5,6 +5,14 @@
 #define BOARD_HPP
 #define WHITE 0
 #define BLACK 1
+
+/*
+    File Name: board.hpp
+    Author: dazhanzheng
+
+    Description: Define the board. Board contains two maps and two cards.Board is the main part of the game,and provides all the modular operations of the game.
+*/
+
 class Board
 {
 private:

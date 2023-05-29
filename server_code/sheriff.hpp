@@ -1,6 +1,14 @@
 #include "./struct.hpp"
 #ifndef SHERIFF_HPP
 #define SHERIFF_HPP
+
+/*
+    File Name: sheriff.hpp
+    Author: dazhanzheng
+
+    Description: Move and patrol.
+*/
+
 class Sheriff
 {
 public:

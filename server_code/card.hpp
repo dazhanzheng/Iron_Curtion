@@ -6,6 +6,13 @@
 #ifndef CARD_HPP
 #define CARD_HPP
 
+/*
+    File Name: card.hpp
+    Author: dazhanzheng
+
+    Description: Define the card. Card contains all the hand cards and provides all the modular operations of the card.
+*/
+
 class Card
 {
 private:

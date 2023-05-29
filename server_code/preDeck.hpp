@@ -1,6 +1,14 @@
 #include "./struct.hpp"
 #ifndef PREDECK_HPP
 #define PREDECK_HPP
+
+/*
+    File Name: preDeck.hpp
+    Author: dazhanzheng
+
+    Description: Define the preDeck.
+*/
+
 informantType basicInformantDeck[20]{
     explosiveExpert,
     explosiveExpert,

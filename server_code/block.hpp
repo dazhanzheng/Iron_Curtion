@@ -2,6 +2,14 @@
 #include "./obstacle.hpp"
 #ifndef BLOCK_HPP
 #define BLOCK_HPP
+
+/*
+    File Name: block.hpp
+    Author: dazhanzheng
+
+    Description: Define the block. Block contains access and obstacles.You can put obstacles in the block.
+*/
+
 class Block
 {
 private:

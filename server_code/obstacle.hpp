@@ -1,6 +1,14 @@
 #include "./log.hpp"
 #ifndef OBSTACLE_HPP
 #define OBSTACLE_HPP
+
+/*
+    File Name: obstacle.hpp
+    Author: dazhanzheng
+
+    Description: Store obstacle information and provides basic set function.
+*/
+
 class Obstacle
 {
 private:

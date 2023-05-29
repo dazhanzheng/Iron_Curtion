@@ -4,6 +4,14 @@
 #include <ctime>
 #ifndef LOG_HPP
 #define LOG_HPP
+
+/*
+    File Name: log.hpp
+    Author: dazhanzheng
+
+    Description: Small logger.
+*/
+
 void log(const std::string &message)
 {
     auto now = std::chrono::system_clock::now();
